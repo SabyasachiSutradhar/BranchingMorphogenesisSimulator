@@ -1,0 +1,24 @@
+///////Parameters for simulating branched neuronal Morphology
+N_Sample=1;///Number of samples to simulate
+Time_Steps=10000;////Maximum number of time steps, each time step is 0.1
+Tip_Persis=250.0;////Persistence length of soma in um
+BranchingAngleMean=90.0;////Mean branching angle wrt mother branch in degrees
+BranchingAngleStd=5.0;////Std dev of branching angle wrt mother branch in degrees
+BranchingRate=0.005;////branching rate per min per micron;
+Vg=1.250;///Tip Growth Velocity micron/min
+Vs=1.0;//absolute value of tip shrinkage velocity micron/min
+Kgp=0.50;//Transition rate from growth to pause /min
+Kgs=0.50;//Transition rate from growth to shrinkage /min
+Kpg=0.50;//Transition rate from pause to growth /min
+Kps=0.50;//Transition rate from pause to shrinkage /min
+Ksg=0.50;//Transition rate from shrinkage to pause /min
+Ksp=0.50;//Transition rate from shrinkage to growth /min
+//////////////// Boundary ////////////////////////////////
+Boundary_type=repulsive;//options are "repulsive", "static", "free" and "pbc"
+SizeX=200.0;//// Box  Size in X direction in micron
+SizeY=200.0;//// Box Size in Y direction in micron
+//////////////////////////////// Data dumping parameters /////////////////////////
+Print_Conf=yes;///Print Configuration Images in pgm format (write yes/no)
+Dump_Conf=1000;///Dump image every 
+Dump_Data=1;///Dump image every 
+pixelsize=0.1;////in micron
