@@ -9,11 +9,11 @@ Time_Steps=10000;////Maximum number of time steps, each time step is 0.1
 Tip_Persis=250.0;////Persistence length of soma in um
 BranchingAngleMean=90.0;////Mean branching angle wrt mother branch in degrees
 BranchingAngleStd=5.0;////Std dev of branching angle wrt mother branch in degrees
-BranchingRate=0.005;////branching rate per min per micron;
-Vg=1.250;///Tip Growth Velocity micron/min
+BranchingRate=0.0025;////branching rate per min per micron;
+Vg=1.0;///Tip Growth Velocity micron/min
 Vs=1.0;//absolute value of tip shrinkage velocity micron/min
 Kgp=0.50;//Transition rate from growth to pause /min
-Kgs=0.50;//Transition rate from growth to shrinkage /min
+Kgs=0.25;//Transition rate from growth to shrinkage /min
 Kpg=0.50;//Transition rate from pause to growth /min
 Kps=0.50;//Transition rate from pause to shrinkage /min
 Ksg=0.50;//Transition rate from shrinkage to pause /min
@@ -27,7 +27,6 @@ Print_Conf=yes;///Print Configuration Images in pgm format (write yes/no)
 Dump_Conf=1000;///Dump image every 
 Dump_Data=1;///Dump image every 
 pixelsize=0.1;////in micron
-
 
 Output:
 The code outputs neuron morphology data in .swc format along with skeletonized image in .pgm format. Additionally, the code produce a Timeseries data containing Branch number, branch lengths etc.
@@ -50,7 +49,7 @@ Running the code
 To run the code just type the following in the command window:
 NMorphSim Parameters.in
 
-Example of the image file:
+Example of an output image file:
 
 ![ConfIm-Sample-1-TimeStep-10000](https://github.com/SabyasachiSutradhar/BranchingMorphogenesisSimulator/assets/49563656/66fec774-d052-48f9-a5d5-3513bd1b3d50)
 
