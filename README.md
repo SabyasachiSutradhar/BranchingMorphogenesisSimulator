@@ -34,18 +34,27 @@ Output:
 The code outputs neuron morphology data in .swc format along with skeletonized image in .pgm format. Additionally, the code produce a Timeseries data containing Branch number, branch lengths etc.
 
 Requirements to run the code:
+
 1.	gcc
-2.	cmake (VERSION 3.24)
-3.	UNIX/Mac Operating System
+   
+3.	cmake (VERSION 3.24)
+   
+5.	UNIX/Mac Operating System
+   
 
 Building and installing the code:
 To build the code run the following commands sequentially.
 
 cd  “path to NeuronMorphologySimulator”
+
 cmake -S src/ -B build/
+
 cmake --build build/
+
 cd build
+
 make install  (you might need to use sudo make install if the access is denied)
+
 
 Running the code
 To run the code just type the following in the command window:
