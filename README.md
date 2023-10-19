@@ -1,7 +1,9 @@
 # BranchingMorphogenesisSimulator
 C code written by Sabyasachi Sutradhar, Yale university (sabyasachi.sutradhar@yale.edu) 2022
+
 Algorithm:
 This code simulates a branched tree structure in two dimensions. Initially, 2-4 randomly oriented branches are generated from the origin (0,0) and then the tips go through three state dynamics G-P-S with different rates Kgp (signifying transition rate from Growth to shrinkage phase), Kgs, Kpg, Kps, Ksg, Ksp as provided by the user. New branches spawned from an existing branch at a random place with a user-provided rate. For a more detailed description and algorithm please see Shree et al, Sci. Adv, 2022.  A file containing the following parameters is necessary to run the code:
+
 
 ///////Parameters for simulating branched neuronal Morphology
 N_Sample=1;///Number of samples to simulate
