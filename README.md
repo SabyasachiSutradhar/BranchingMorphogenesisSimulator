@@ -28,6 +28,7 @@ Dump_Conf=1000;///Dump image every
 Dump_Data=1;///Dump image every 
 pixelsize=0.1;////in micron
 
+
 Output:
 The code outputs neuron morphology data in .swc format along with skeletonized image in .pgm format. Additionally, the code produce a Timeseries data containing Branch number, branch lengths etc.
 
